@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Владислав & Инна — 14.09.2026</title>
+  <meta name="description" content="Свадебное приглашение Инны и Владислава — 14.09.2026" />
+  <meta property="og:title" content="Владислав & Инна" />
+  <meta property="og:description" content="Приглашение на свадьбу • 14.09.2026" />
+  <meta property="og:image" content="images/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <div class="logo">И <span>|</span> В</div>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#details">Детали</a>
+      <a href="#program">Программа</a>
+      <a href="#dresscode">Дресс-код</a>
+      <a href="#rsvp">Анкета</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-photo">
+        <img src="images/hero.jpg" alt="Владислав и Инна" />
+      </div>
+      <div class="hero-card">
+        <p class="overline">Приглашение на свадьбу</p>
+        <h1>Инна<br><span>и</span><br>Владислав</h1>
+        <div class="divider"><i></i><b>♡</b><i></i></div>
+        <p class="date">14.09.2026</p>
+        <p class="script">Мы будем счастливы разделить этот день с вами</p>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <p class="overline">До нашей свадьбы осталось</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">0</strong><span>дней</span></div>
+        <div><strong id="hours">0</strong><span>часов</span></div>
+        <div><strong id="minutes">0</strong><span>минут</span></div>
+        <div><strong id="seconds">0</strong><span>секунд</span></div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <p class="script big">Дорогие родные и друзья!</p>
+      <p>В нашей жизни наступает особенный день. Мы будем рады видеть вас рядом, чтобы вместе разделить радость, улыбки и атмосферу этого праздника.</p>
+    </section>
+
+    <section id="details" class="details">
+      <div class="section-title">
+        <span></span><h2>Детали торжества</h2><span></span>
+      </div>
+      <div class="detail-grid">
+        <article>
+          <div class="icon">♡</div>
+          <h3>Церемония</h3>
+          <p>13:00</p>
+          <small>Дворец бракосочетания № 4<br>г. Москва, ул. Бутырская, д. 17</small>
+        </article>
+        <article>
+          <div class="icon">♢</div>
+          <h3>Ужин</h3>
+          <p>16:30</p>
+          <small>Ресторан «Мими»<br>г. Москва, проезд Дежнёва, д. 13</small>
+        </article>
+        <article>
+          <div class="icon">♡</div>
+          <h3>Дата</h3>
+          <p>14.09.2026</p>
+          <small>Ждём вас на нашем празднике</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="program" class="program">
+      <div class="section-title"><span></span><h2>Программа дня</h2><span></span></div>
+      <div class="timeline">
+        <div><time>12:45</time><p>Встреча гостей у ЗАГСа</p></div>
+        <div><time>13:00</time><p>Церемония бракосочетания</p></div>
+        <div><time>14:30</time><p>Фотосессия в Ботаническом саду</p></div>
+        <div><time>16:30</time><p>Ужин в ресторане «Мими»</p></div>
+      </div>
+    </section>
+
+    <section id="dresscode" class="dresscode">
+      <div class="section-title"><span></span><h2>Дресс-код</h2><span></span></div>
+      <p class="script big">Главное — ваше хорошее настроение</p>
+      <p>Приходите в том, в чём вам комфортно. Единственная просьба — пожалуйста, не выбирайте белый цвет.</p>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <p class="overline">Подтвердите, пожалуйста</p>
+      <h2>Будете ли вы с нами?</h2>
+      <p>Заполните анкету и укажите пожелания по напиткам.</p>
+
+      <form id="guestForm" class="guest-form">
+        <label>
+          Ваше имя и фамилия
+          <input type="text" name="name" autocomplete="name" required placeholder="Например, Анна Иванова">
+        </label>
+
+        <fieldset>
+          <legend>Сможете присутствовать?</legend>
+          <label class="choice"><input type="radio" name="attendance" value="Да, с удовольствием" required> Да, с удовольствием</label>
+          <label class="choice"><input type="radio" name="attendance" value="К сожалению, не смогу"> К сожалению, не смогу</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Что предпочитаете из напитков?</legend>
+          <label class="choice"><input type="checkbox" name="alcohol" value="Шампанское"> Шампанское</label>
+          <label class="choice"><input type="checkbox" name="alcohol" value="Белое вино"> Белое вино</label>
+          <label class="choice"><input type="checkbox" name="alcohol" value="Красное вино"> Красное вино</label>
+          <label class="choice"><input type="checkbox" name="alcohol" value="Водка"> Водка</label>
+          <label class="choice"><input type="checkbox" name="alcohol" value="Виски"> Виски</label>
+          <label class="choice"><input type="checkbox" name="alcohol" value="Безалкогольные напитки"> Безалкогольные напитки</label>
+        </fieldset>
+
+        <label>
+          Комментарий или другие пожелания
+          <textarea name="comment" rows="3" placeholder="Можно оставить пустым"></textarea>
+        </label>
+
+        <button class="btn primary submit-btn" type="submit">Отправить анкету</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="script">С любовью, Владислав и Инна ♡</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
